@@ -25,3 +25,20 @@ Below are some point clouds I have scanned/generated/downloaded which represent 
 ![alt text](https://github.com/masnottuh/point-cloud-toolbox/blob/main/img/carton2.png)
 ![alt text](https://github.com/masnottuh/point-cloud-toolbox/blob/main/img/sridge.png)
 ![alt text](https://github.com/masnottuh/point-cloud-toolbox/blob/main/img/torus.png)
+
+
+
+utils line 502 "is not" to "!="
+
+what changed
+More point densities iterations for shapes
+split functionalities into different scripts
+ - main_shape_validation.py runs through energy calcs for test shapes for lots of different point densities and some perturbs and then plots the theor area results v real err
+
+- main_scans.py specific a directory to run the energy calcs in
+
+- downsample.py uses o3d "voxel_down_sample" to reduce the size of the point clouds
+
+- convert_asc_to_ply.py as it says on the tin. Just changing the headers of the underlying text files
+
+- 
